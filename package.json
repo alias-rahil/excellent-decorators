@@ -1,5 +1,5 @@
 {
-  "name": "awesome-decorators",
+  "name": "excellent-decorators",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
@@ -14,15 +14,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alias-rahil/awesome-decorators.git"
+    "url": "git+https://github.com/alias-rahil/excellent-decorators.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/alias-rahil/awesome-decorators/issues"
+    "url": "https://github.com/alias-rahil/excellent-decorators/issues"
   },
-  "homepage": "https://github.com/alias-rahil/awesome-decorators#readme",
+  "homepage": "https://github.com/alias-rahil/excellent-decorators#readme",
   "devDependencies": {
     "@commitlint/cli": "^17.3.0",
     "@commitlint/config-conventional": "^17.3.0",

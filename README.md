@@ -1,1 +1,1 @@
-# awesome-decorators
+# excellent-decorators
