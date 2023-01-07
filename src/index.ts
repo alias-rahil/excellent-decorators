@@ -1,2 +1,3 @@
-export {default as freeze} from './freeze.js';
-export {default as seal} from './seal.js';
+export {default as Freeze} from './freeze.js';
+export {default as Seal} from './seal.js';
+export {default as Warn} from './warn.js';

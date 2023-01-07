@@ -1,5 +1,7 @@
 function freeze() {
-	return function <T>(target: new (...args: never[]) => T) {
+	return <T extends new (...rest: any[]) => Record<never, unknown>>(
+		target: T,
+	) => {
 		Object.freeze(target);
 		Object.freeze(target.prototype);
 
