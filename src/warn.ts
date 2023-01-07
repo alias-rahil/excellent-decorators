@@ -27,7 +27,7 @@ const warn = <T extends BaseLogger>(
 			}
 		}
 
-		NewTarget.prototype = Target.prototype as unknown;
+		Object.setPrototypeOf(NewTarget.prototype, Object.getPrototypeOf(Target.prototype));
 
 		return NewTarget;
 	};
