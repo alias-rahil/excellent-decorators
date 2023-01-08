@@ -14,12 +14,10 @@ const warn = <T extends BaseLogger>(
 				...unknown[],
 			];
 
-			if (!options?.silent || silent) {
-				if (logger) {
-					logger.warn(...loggerArgs);
-				} else {
-					console.warn(...loggerArgs);
-				}
+			if (!options?.silent && !silent) {
+				const log = (options?.logger ?? logger ?? console).warn;
+
+				log.call(options?.logger ?? logger ?? console, ...loggerArgs);
 			}
 
 			super(...rest);
