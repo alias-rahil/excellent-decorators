@@ -1,8 +1,8 @@
-const warn = <T extends {warn: (...loggerArgs: unknown[]) => void}, U extends new (...rest: any[]) => Record<never, unknown>>(
+const warn = <T extends {warn: (...loggerArgs: unknown[]) => void}>(
 	loggerArgs: unknown[],
 	silent?: boolean,
 	logger?: T,
-) => (Target: U) => {
+) => <U extends new (...rest: any[]) => Record<never, unknown>>(Target: U) => {
 	class NewTarget extends Target {
 		constructor(...rest: any[]) {
 			const [options] = rest as [
