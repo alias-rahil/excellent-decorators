@@ -1,12 +1,8 @@
-type BaseLogger = {
-	warn: (...loggerArgs: unknown[]) => void;
-};
-
-const warn = <T extends BaseLogger>(
+const warn = <T extends {warn: (...loggerArgs: unknown[]) => void}, U extends new (...rest: any[]) => Record<never, unknown>>(
 	loggerArgs: unknown[],
 	silent?: boolean,
 	logger?: T,
-) => <T extends BaseLogger, U extends new (...rest: any[]) => Record<never, unknown>>(Target: U) => {
+) => (Target: U) => {
 	class NewTarget extends Target {
 		constructor(...rest: any[]) {
 			const [options] = rest as [
