@@ -1,3 +1,9 @@
+/**
+ * ```
+ * @Freeze()
+ * class Test {}
+ * ```
+ */
 const freeze = () => <T extends new (...rest: any[]) => Record<number | symbol | string, unknown>>(
 	target: T,
 ) => {

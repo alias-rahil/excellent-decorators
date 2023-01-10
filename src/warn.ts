@@ -1,20 +1,28 @@
-const warn = <Logger extends {warn: (...loggerArgs: unknown[]) => void}>(
+import type Logger from './types/logger';
+
+/**
+ * ```
+ * @Warn(['Warning: Test is deprecated, use TestV2 instead'])
+ * class Test {}
+ * ```
+ */
+const warn = (
 	loggerArgs: unknown[],
-	accountForConstructorOptions = true,
-	silent?: boolean,
-	logger?: Logger,
+	honourConstructorOptions = true,
+	silent = false,
+	logger: Logger = console,
 ) => <T extends new (...rest: any[]) => Record<number | symbol | string, unknown>>(Target: T) => {
 	class NewTarget extends Target {
 		constructor(...rest: any[]) {
-			const [options] = accountForConstructorOptions ? rest as [
+			const [options] = honourConstructorOptions ? rest as [
 				{silent?: boolean; logger?: Logger} | undefined,
 				...unknown[],
 			] : [];
 
 			if (!options?.silent && !silent) {
-				const log = (options?.logger ?? logger ?? console).warn;
+				const log = (options?.logger ?? logger).warn;
 
-				log.call(options?.logger ?? logger ?? console, ...loggerArgs);
+				log.call(options?.logger ?? logger, ...loggerArgs);
 			}
 
 			super(...rest);

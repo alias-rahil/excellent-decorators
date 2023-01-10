@@ -1,5 +1,5 @@
 const config = {
-	'*': () => ['npm run build:dry', 'npm run lint:fix'],
+	'*': () => ['npm run prepack', 'npm run lint'],
 };
 
 // eslint-disable-next-line unicorn/prefer-module

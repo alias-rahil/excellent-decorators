@@ -1,3 +1,9 @@
+/**
+ * ```
+ * @Seal()
+ * class Test {}
+ * ```
+ */
 const seal = () => <T extends new (...rest: any[]) => Record<number | symbol | string, unknown>>(
 	target: T,
 ) => {
