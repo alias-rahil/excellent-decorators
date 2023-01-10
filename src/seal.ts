@@ -1,12 +1,10 @@
-function seal() {
-	return <T extends new (...rest: any[]) => Record<never, unknown>>(
-		target: T,
-	) => {
-		Object.seal(target);
-		Object.seal(target.prototype);
+const seal = () => <T extends new (...rest: any[]) => Record<number | symbol | string, unknown>>(
+	target: T,
+) => {
+	Object.seal(target);
+	Object.seal(target.prototype);
 
-		return target;
-	};
-}
+	return target;
+};
 
 export default seal;

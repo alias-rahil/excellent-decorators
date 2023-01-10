@@ -1,12 +1,10 @@
-function freeze() {
-	return <T extends new (...rest: any[]) => Record<never, unknown>>(
-		target: T,
-	) => {
-		Object.freeze(target);
-		Object.freeze(target.prototype);
+const freeze = () => <T extends new (...rest: any[]) => Record<number | symbol | string, unknown>>(
+	target: T,
+) => {
+	Object.freeze(target);
+	Object.freeze(target.prototype);
 
-		return target;
-	};
-}
+	return target;
+};
 
 export default freeze;
