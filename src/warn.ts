@@ -1,7 +1,7 @@
 import type Logger from './types/logger';
 
 /**
- * ```
+ * ```typescript
  * @Warn(['Warning: Test is deprecated, use TestV2 instead.'])
  * class Test {}
  * ```

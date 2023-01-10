@@ -1,5 +1,5 @@
 /**
- * ```
+ * ```typescript
  * @Seal()
  * class Test {}
  * ```

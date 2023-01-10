@@ -28,7 +28,7 @@ excellent-decorators
 
 #### Defined in
 
-[types/logger.ts:1](https://github.com/alias-rahil/awesome-decorators/blob/e878691/src/types/logger.ts#L1)
+[types/logger.ts:1](https://github.com/alias-rahil/awesome-decorators/blob/0f31f3c/src/types/logger.ts#L1)
 
 ## Functions
 
@@ -36,7 +36,7 @@ excellent-decorators
 
 ▸ **Freeze**(): <T\>(`target`: `T`) => `T`
 
-```
+```typescript
 @Freeze()
 class Test {}
 ```
@@ -65,7 +65,7 @@ class Test {}
 
 #### Defined in
 
-[freeze.ts:7](https://github.com/alias-rahil/awesome-decorators/blob/e878691/src/freeze.ts#L7)
+[freeze.ts:7](https://github.com/alias-rahil/awesome-decorators/blob/0f31f3c/src/freeze.ts#L7)
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 ▸ **Seal**(): <T\>(`target`: `T`) => `T`
 
-```
+```typescript
 @Seal()
 class Test {}
 ```
@@ -102,7 +102,7 @@ class Test {}
 
 #### Defined in
 
-[seal.ts:7](https://github.com/alias-rahil/awesome-decorators/blob/e878691/src/seal.ts#L7)
+[seal.ts:7](https://github.com/alias-rahil/awesome-decorators/blob/0f31f3c/src/seal.ts#L7)
 
 ___
 
@@ -110,7 +110,7 @@ ___
 
 ▸ **Warn**(`loggerArgs`, `honourConstructorOptions?`, `silent?`, `logger?`): <T\>(`Target`: `T`) => (...`rest`: `any`[]) => `NewTarget`<`T`\> & `T`
 
-```
+```typescript
 @Warn(['Warning: Test is deprecated, use TestV2 instead.'])
 class Test {}
 ```
@@ -148,4 +148,4 @@ class Test {}
 
 #### Defined in
 
-[warn.ts:9](https://github.com/alias-rahil/awesome-decorators/blob/e878691/src/warn.ts#L9)
+[warn.ts:9](https://github.com/alias-rahil/awesome-decorators/blob/0f31f3c/src/warn.ts#L9)

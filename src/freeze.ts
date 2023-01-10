@@ -1,5 +1,5 @@
 /**
- * ```
+ * ```typescript
  * @Freeze()
  * class Test {}
  * ```
