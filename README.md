@@ -1,1 +1,1 @@
-excellent-decorators / [Exports](docs/README.md)
+excellent-decorators / [Exports](https://github.com/alias-rahil/excellent-decorators/blob/main/docs/README.md)

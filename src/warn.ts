@@ -2,7 +2,7 @@ import type Logger from './types/logger';
 
 /**
  * ```
- * @Warn(['Warning: Test is deprecated, use TestV2 instead'])
+ * @Warn(['Warning: Test is deprecated, use TestV2 instead.'])
  * class Test {}
  * ```
  */

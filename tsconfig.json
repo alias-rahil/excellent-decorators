@@ -13,6 +13,7 @@
     "entryPoints": ["src/index.ts"],
     "plugin": "typedoc-plugin-markdown",
     "readme": "none",
-    "githubPages": false
+    "githubPages": false,
+    "publicPath": "https://github.com/alias-rahil/excellent-decorators/blob/main/docs/"
   }
 }

@@ -6,13 +6,13 @@ excellent-decorators
 
 ### Type Aliases
 
-- [Logger](README.md#logger)
+- [Logger](https://github.com/alias-rahil/excellent-decorators/blob/main/docs/README.md#logger)
 
 ### Functions
 
-- [Freeze](README.md#freeze)
-- [Seal](README.md#seal)
-- [Warn](README.md#warn)
+- [Freeze](https://github.com/alias-rahil/excellent-decorators/blob/main/docs/README.md#freeze)
+- [Seal](https://github.com/alias-rahil/excellent-decorators/blob/main/docs/README.md#seal)
+- [Warn](https://github.com/alias-rahil/excellent-decorators/blob/main/docs/README.md#warn)
 
 ## Type Aliases
 
@@ -28,7 +28,7 @@ excellent-decorators
 
 #### Defined in
 
-[types/logger.ts:1](https://github.com/alias-rahil/awesome-decorators/blob/7a4c4fb/src/types/logger.ts#L1)
+[types/logger.ts:1](https://github.com/alias-rahil/awesome-decorators/blob/a001ecc/src/types/logger.ts#L1)
 
 ## Functions
 
@@ -65,7 +65,7 @@ class Test {}
 
 #### Defined in
 
-[freeze.ts:7](https://github.com/alias-rahil/awesome-decorators/blob/7a4c4fb/src/freeze.ts#L7)
+[freeze.ts:7](https://github.com/alias-rahil/awesome-decorators/blob/a001ecc/src/freeze.ts#L7)
 
 ___
 
@@ -102,7 +102,7 @@ class Test {}
 
 #### Defined in
 
-[seal.ts:7](https://github.com/alias-rahil/awesome-decorators/blob/7a4c4fb/src/seal.ts#L7)
+[seal.ts:7](https://github.com/alias-rahil/awesome-decorators/blob/a001ecc/src/seal.ts#L7)
 
 ___
 
@@ -111,7 +111,7 @@ ___
 ▸ **Warn**(`loggerArgs`, `honourConstructorOptions?`, `silent?`, `logger?`): <T\>(`Target`: `T`) => (...`rest`: `any`[]) => `NewTarget`<`T`\> & `T`
 
 ```
-@Warn(['Warning: Test is deprecated, use TestV2 instead'])
+@Warn(['Warning: Test is deprecated, use TestV2 instead.'])
 class Test {}
 ```
 
@@ -122,7 +122,7 @@ class Test {}
 | `loggerArgs` | `unknown`[] | `undefined` |
 | `honourConstructorOptions` | `boolean` | `true` |
 | `silent` | `boolean` | `false` |
-| `logger` | [`Logger`](README.md#logger) | `console` |
+| `logger` | [`Logger`](https://github.com/alias-rahil/excellent-decorators/blob/main/docs/README.md#logger) | `console` |
 
 #### Returns
 
@@ -148,4 +148,4 @@ class Test {}
 
 #### Defined in
 
-[warn.ts:9](https://github.com/alias-rahil/awesome-decorators/blob/7a4c4fb/src/warn.ts#L9)
+[warn.ts:9](https://github.com/alias-rahil/awesome-decorators/blob/a001ecc/src/warn.ts#L9)
