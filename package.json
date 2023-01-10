@@ -1,6 +1,6 @@
 {
   "name": "excellent-decorators",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "description": "",
   "main": "dist/index.js",
   "types": "typings/index.d.ts",
