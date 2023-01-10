@@ -4,7 +4,7 @@
  * class Test {}
  * ```
  */
-const seal = () => <T extends new (...rest: any[]) => Record<number | symbol | string, unknown>>(
+const seal = () => <T extends new (...rest: any[]) => Record<never, unknown>>(
 	target: T,
 ) => {
 	Object.seal(target);

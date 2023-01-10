@@ -11,7 +11,7 @@ const warn = (
 	honourConstructorOptions = true,
 	silent = false,
 	logger: Logger = console,
-) => <T extends new (...rest: any[]) => Record<number | symbol | string, unknown>>(Target: T) => {
+) => <T extends new (...rest: any[]) => Record<never, unknown>>(Target: T) => {
 	class NewTarget extends Target {
 		constructor(...rest: any[]) {
 			const [options] = honourConstructorOptions ? rest as [
