@@ -1,1 +1,1 @@
-excellent-decorators / [Exports](modules.md)
+excellent-decorators / [Exports](docs/README.md)
