@@ -1,14 +1,15 @@
 const warn = <T extends {warn: (...loggerArgs: unknown[]) => void}>(
 	loggerArgs: unknown[],
+	accountForConstructorOptions = true,
 	silent?: boolean,
 	logger?: T,
-) => <U extends new (...rest: any[]) => Record<never, unknown>>(Target: U) => {
+) => <U extends new (...rest: any[]) => Record<number | symbol | string, unknown>>(Target: U) => {
 	class NewTarget extends Target {
 		constructor(...rest: any[]) {
-			const [options] = rest as [
+			const [options] = accountForConstructorOptions ? rest as [
 				{silent?: boolean; logger?: T} | undefined,
 				...unknown[],
-			];
+			] : [];
 
 			if (!options?.silent && !silent) {
 				const log = (options?.logger ?? logger ?? console).warn;
