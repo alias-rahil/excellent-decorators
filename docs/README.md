@@ -28,7 +28,7 @@ excellent-decorators
 
 #### Defined in
 
-[types/logger.ts:1](https://github.com/alias-rahil/awesome-decorators/blob/d54a98b/src/types/logger.ts#L1)
+[types/logger.ts:1](https://github.com/alias-rahil/awesome-decorators/blob/8c48ee4/src/types/logger.ts#L1)
 
 ## Functions
 
@@ -59,7 +59,7 @@ class Test {}
 
 #### Defined in
 
-[freeze.ts:7](https://github.com/alias-rahil/awesome-decorators/blob/d54a98b/src/freeze.ts#L7)
+[freeze.ts:7](https://github.com/alias-rahil/awesome-decorators/blob/8c48ee4/src/freeze.ts#L7)
 
 ___
 
@@ -90,7 +90,7 @@ class Test {}
 
 #### Defined in
 
-[seal.ts:7](https://github.com/alias-rahil/awesome-decorators/blob/d54a98b/src/seal.ts#L7)
+[seal.ts:7](https://github.com/alias-rahil/awesome-decorators/blob/8c48ee4/src/seal.ts#L7)
 
 ___
 
@@ -136,4 +136,4 @@ class Test {}
 
 #### Defined in
 
-[warn.ts:9](https://github.com/alias-rahil/awesome-decorators/blob/d54a98b/src/warn.ts#L9)
+[warn.ts:9](https://github.com/alias-rahil/awesome-decorators/blob/8c48ee4/src/warn.ts#L9)
