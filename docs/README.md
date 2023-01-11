@@ -28,81 +28,69 @@ excellent-decorators
 
 #### Defined in
 
-[types/logger.ts:1](https://github.com/alias-rahil/awesome-decorators/blob/5b1ff33/src/types/logger.ts#L1)
+[types/logger.ts:1](https://github.com/alias-rahil/awesome-decorators/blob/d54a98b/src/types/logger.ts#L1)
 
 ## Functions
 
 ### Freeze
 
-▸ **Freeze**(): <T\>(`target`: `T`) => `T`
+▸ **Freeze**<`T`\>(`target`): `T`
 
 ```typescript
-@Freeze()
+@Freeze
 class Test {}
 ```
 
-#### Returns
-
-`fn`
-
-▸ <`T`\>(`target`): `T`
-
-##### Type parameters
+#### Type parameters
 
 | Name | Type |
 | :------ | :------ |
 | `T` | extends (...`rest`: `any`[]) => `Record`<`never`, `unknown`\> |
 
-##### Parameters
+#### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `target` | `T` |
 
-##### Returns
+#### Returns
 
 `T`
 
 #### Defined in
 
-[freeze.ts:7](https://github.com/alias-rahil/awesome-decorators/blob/5b1ff33/src/freeze.ts#L7)
+[freeze.ts:7](https://github.com/alias-rahil/awesome-decorators/blob/d54a98b/src/freeze.ts#L7)
 
 ___
 
 ### Seal
 
-▸ **Seal**(): <T\>(`target`: `T`) => `T`
+▸ **Seal**<`T`\>(`target`): `T`
 
 ```typescript
-@Seal()
+@Seal
 class Test {}
 ```
 
-#### Returns
-
-`fn`
-
-▸ <`T`\>(`target`): `T`
-
-##### Type parameters
+#### Type parameters
 
 | Name | Type |
 | :------ | :------ |
 | `T` | extends (...`rest`: `any`[]) => `Record`<`never`, `unknown`\> |
 
-##### Parameters
+#### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `target` | `T` |
 
-##### Returns
+#### Returns
 
 `T`
 
 #### Defined in
 
-[seal.ts:7](https://github.com/alias-rahil/awesome-decorators/blob/5b1ff33/src/seal.ts#L7)
+[seal.ts:7](https://github.com/alias-rahil/awesome-decorators/blob/d54a98b/src/seal.ts#L7)
 
 ___
 
@@ -148,4 +136,4 @@ class Test {}
 
 #### Defined in
 
-[warn.ts:9](https://github.com/alias-rahil/awesome-decorators/blob/5b1ff33/src/warn.ts#L9)
+[warn.ts:9](https://github.com/alias-rahil/awesome-decorators/blob/d54a98b/src/warn.ts#L9)

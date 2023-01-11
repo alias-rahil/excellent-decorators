@@ -1,10 +1,10 @@
 /**
  * ```typescript
- * @Seal()
+ * @Seal
  * class Test {}
  * ```
  */
-const seal = () => <T extends new (...rest: any[]) => Record<never, unknown>>(
+const seal = <T extends new (...rest: any[]) => Record<never, unknown>>(
 	target: T,
 ) => {
 	Object.seal(target);

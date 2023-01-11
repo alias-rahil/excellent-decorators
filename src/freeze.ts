@@ -1,10 +1,10 @@
 /**
  * ```typescript
- * @Freeze()
+ * @Freeze
  * class Test {}
  * ```
  */
-const freeze = () => <T extends new (...rest: any[]) => Record<never, unknown>>(
+const freeze = <T extends new (...rest: any[]) => Record<never, unknown>>(
 	target: T,
 ) => {
 	Object.freeze(target);
